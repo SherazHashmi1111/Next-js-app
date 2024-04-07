@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import styles from "./Navigation.module.css";
 import Link from 'next/link'
 
 function Navigation() {
