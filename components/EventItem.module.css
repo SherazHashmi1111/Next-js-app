@@ -1,0 +1,6 @@
+.list__item{
+    background-color: #ddd;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+}

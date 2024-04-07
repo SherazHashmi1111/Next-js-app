@@ -1,0 +1,6 @@
+.item__detail{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 5rem 0;
+}
