@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from './EventDetail.module.css'
-import { getEventById } from '@/dummyData';
-import { redirect } from 'next/dist/server/api-utils';
 
 function EventDetail(props) {
 

@@ -1,14 +1,23 @@
-import EventsList from '@/components/EventsList';
-import { getAllEvents } from '@/dummyData'
-import React, { Fragment } from 'react'
+import EventsList from "@/components/EventsList";
+import { getAllEvents } from "@/helppers/api-util";
+import React, { Fragment } from "react";
 
-function Events() {
-    const events = getAllEvents();
+function Events(props) {
   return (
     <Fragment>
-    <EventsList items={events}/>
+      <EventsList items={props.events} />
     </Fragment>
-  )
+  );
 }
 
-export default Events
+export async function getStaticProps(context) {
+  const allEvents = await getAllEvents();
+
+  return {
+    props: {
+      events: allEvents,
+    },
+  };
+}
+
+export default Events;

@@ -10,7 +10,6 @@ function EventsItem(props) {
         year: 'numeric',
         day: '2-digit'
     })
-    console.log(title);
 
     const exploreEventHandler = (e) => {
       e.preventDefault();
